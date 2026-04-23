@@ -36,7 +36,7 @@ Designed to enable proactive academic advising through early risk detection.
 
 \## Repository Structure
 
-COMP385\_Iteration#2\_Group4/
+COMP385-Group4/Main
 
 ├── artifacts/
 
@@ -83,6 +83,8 @@ COMP385\_Iteration#2\_Group4/
 │       ├── test\_predict.py
 
 │       └── test\_api.py
+
+|       ├── test_integration.py
 
 ├── frontend/                   ← Iteration 2 React Dashboard
 
@@ -210,7 +212,7 @@ python -m pytest tests/ -v
 
 
 
-\*\*21/21 tests passing\*\*
+\*\*40/40 tests passing\*\*
 
 
 
@@ -225,4 +227,24 @@ python -m pytest tests/ -v
 Source: \[Higher Education Predictors of Student Retention – Kaggle](https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention)
 
 4,424 student records | 34 features | Target: Dropout / Enrolled / Graduate
+
+---
+## Final Results – Full Stack + Testing
+
+**AI Model:** Gradient Boosting | Accuracy 76.95% | Macro F1 0.7018 | ROC-AUC 0.8915
+
+**Testing:**
+| Test File | Type | Tests |
+|---|---|---|
+| test_predict.py | Unit Tests | 12 |
+| test_api.py | Unit Tests | 9 |
+| test_integration.py | Integration Tests | 19 |
+| Manual (EU-01–EU-06) | End-User Tests | 6 |
+
+**40/40 automated tests passing | 6/6 end-user tests passing**
+
+## Ethical & Regulatory
+- Bias analysis conducted across Gender, Scholarship, International, and Debtor groups
+- International student gap identified (F1 = 0.564, n = 24) — SMOTE recommended
+- Compliant with PIPEDA and FIPPA frameworks for Canadian post-secondary deployment
 
