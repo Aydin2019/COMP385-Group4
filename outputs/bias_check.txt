@@ -1,0 +1,17 @@
+Overall macro-F1: 0.7018
+
+Bias check by Gender:
+  Gender=0: macro-F1=0.7153 (n=570)
+  Gender=1: macro-F1=0.6701 (n=315)
+
+Bias check by Scholarship holder:
+  Scholarship holder=0: macro-F1=0.6986 (n=680)
+  Scholarship holder=1: macro-F1=0.6387 (n=205)
+
+Bias check by International:
+  International=0: macro-F1=0.7056 (n=861)
+  International=1: macro-F1=0.5639 (n=24)
+
+Bias check by Debtor:
+  Debtor=0: macro-F1=0.6914 (n=771)
+  Debtor=1: macro-F1=0.7259 (n=114)

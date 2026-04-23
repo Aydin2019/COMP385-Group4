@@ -1,0 +1,57 @@
+{
+  "selected_model": "GradientBoosting",
+  "selection_metric": "cv_f1_macro_mean",
+  "cv_f1_macro_mean": 0.7040175055667397,
+  "cv_folds": 5,
+  "random_seed": 42,
+  "all_model_results": {
+    "LogisticRegression": {
+      "best_params": {
+        "clf__C": 1.0
+      },
+      "grid_best_f1_macro": 0.680343213062956,
+      "cv_f1_macro_mean": 0.680343213062956,
+      "cv_f1_macro_std": 0.011212488255628948,
+      "cv_f1_macro_scores": [
+        0.6654219413207182,
+        0.6979250974096335,
+        0.6810103142296787,
+        0.6719395270478862,
+        0.6854191853068631
+      ]
+    },
+    "RandomForest": {
+      "best_params": {
+        "clf__max_depth": 20,
+        "clf__n_estimators": 200
+      },
+      "grid_best_f1_macro": 0.6967598100636143,
+      "cv_f1_macro_mean": 0.6967598100636143,
+      "cv_f1_macro_std": 0.01628956137184993,
+      "cv_f1_macro_scores": [
+        0.7005019005019005,
+        0.697755207599969,
+        0.6656931303990127,
+        0.7099646453563504,
+        0.709884166460839
+      ]
+    },
+    "GradientBoosting": {
+      "best_params": {
+        "clf__learning_rate": 0.1,
+        "clf__n_estimators": 200
+      },
+      "grid_best_f1_macro": 0.7040175055667397,
+      "cv_f1_macro_mean": 0.7040175055667397,
+      "cv_f1_macro_std": 0.00968564857332172,
+      "cv_f1_macro_scores": [
+        0.6900387809605308,
+        0.713341623017986,
+        0.6947488883016737,
+        0.7095863366674163,
+        0.712371898886092
+      ]
+    }
+  },
+  "generated_at": "2026-02-26 23:31"
+}
