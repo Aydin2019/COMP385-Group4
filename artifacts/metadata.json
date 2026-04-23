@@ -1,57 +1,99 @@
 {
-  "selected_model": "GradientBoosting",
+  "selected_model": "XGBoost",
   "selection_metric": "cv_f1_macro_mean",
-  "cv_f1_macro_mean": 0.7040175055667397,
+  "cv_f1_macro_mean": 0.7359905589178792,
   "cv_folds": 5,
   "random_seed": 42,
+  "categorical_columns": [
+    "Application mode",
+    "Application order",
+    "Course",
+    "Daytime/evening attendance",
+    "Debtor",
+    "Displaced",
+    "Educational special needs",
+    "Father's occupation",
+    "Father's qualification",
+    "Gender",
+    "International",
+    "Marital status",
+    "Mother's occupation",
+    "Mother's qualification",
+    "Nacionality",
+    "Previous qualification",
+    "Scholarship holder",
+    "Tuition fees up to date"
+  ],
+  "numeric_columns": [
+    "Age at enrollment",
+    "Curricular units 1st sem (credited)",
+    "Curricular units 1st sem (enrolled)",
+    "Curricular units 1st sem (evaluations)",
+    "Curricular units 1st sem (approved)",
+    "Curricular units 1st sem (grade)",
+    "Curricular units 1st sem (without evaluations)",
+    "Curricular units 2nd sem (credited)",
+    "Curricular units 2nd sem (enrolled)",
+    "Curricular units 2nd sem (evaluations)",
+    "Curricular units 2nd sem (approved)",
+    "Curricular units 2nd sem (grade)",
+    "Curricular units 2nd sem (without evaluations)",
+    "Unemployment rate",
+    "Inflation rate",
+    "GDP"
+  ],
   "all_model_results": {
     "LogisticRegression": {
       "best_params": {
-        "clf__C": 1.0
+        "clf__C": 0.1
       },
-      "grid_best_f1_macro": 0.680343213062956,
-      "cv_f1_macro_mean": 0.680343213062956,
-      "cv_f1_macro_std": 0.011212488255628948,
+      "grid_best_f1_macro": 0.7166625565287451,
+      "cv_f1_macro_mean": 0.7166625565287451,
+      "cv_f1_macro_std": 0.015283543904874271,
       "cv_f1_macro_scores": [
-        0.6654219413207182,
-        0.6979250974096335,
-        0.6810103142296787,
-        0.6719395270478862,
-        0.6854191853068631
+        0.7282709743378297,
+        0.7371699614807049,
+        0.7158023645946825,
+        0.7088905475731376,
+        0.6931789346573708
       ]
     },
     "RandomForest": {
       "best_params": {
-        "clf__max_depth": 20,
-        "clf__n_estimators": 200
+        "clf__max_depth": 15,
+        "clf__min_samples_leaf": 1,
+        "clf__n_estimators": 500
       },
-      "grid_best_f1_macro": 0.6967598100636143,
-      "cv_f1_macro_mean": 0.6967598100636143,
-      "cv_f1_macro_std": 0.01628956137184993,
+      "grid_best_f1_macro": 0.7074465266875027,
+      "cv_f1_macro_mean": 0.7074465266875027,
+      "cv_f1_macro_std": 0.025087594701472937,
       "cv_f1_macro_scores": [
-        0.7005019005019005,
-        0.697755207599969,
-        0.6656931303990127,
-        0.7099646453563504,
-        0.709884166460839
+        0.7095179609298987,
+        0.7398273962044133,
+        0.7286131604843594,
+        0.686685674628562,
+        0.6725884411902806
       ]
     },
-    "GradientBoosting": {
+    "XGBoost": {
       "best_params": {
-        "clf__learning_rate": 0.1,
-        "clf__n_estimators": 200
+        "clf__colsample_bytree": 0.8,
+        "clf__learning_rate": 0.03,
+        "clf__max_depth": 4,
+        "clf__n_estimators": 500,
+        "clf__subsample": 0.8
       },
-      "grid_best_f1_macro": 0.7040175055667397,
-      "cv_f1_macro_mean": 0.7040175055667397,
-      "cv_f1_macro_std": 0.00968564857332172,
+      "grid_best_f1_macro": 0.7359905589178792,
+      "cv_f1_macro_mean": 0.7359905589178792,
+      "cv_f1_macro_std": 0.014247668759080621,
       "cv_f1_macro_scores": [
-        0.6900387809605308,
-        0.713341623017986,
-        0.6947488883016737,
-        0.7095863366674163,
-        0.712371898886092
+        0.7383835505852744,
+        0.7402732828578132,
+        0.7589479078840782,
+        0.7246963172431471,
+        0.717651736019083
       ]
     }
   },
-  "generated_at": "2026-04-22 22:20"
+  "generated_at": "2026-04-22 22:53"
 }

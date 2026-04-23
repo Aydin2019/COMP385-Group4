@@ -4,3 +4,4 @@ scikit-learn
 matplotlib
 joblib
 shap
+xgboost==2.0.3
