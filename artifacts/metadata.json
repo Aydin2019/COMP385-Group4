@@ -1,7 +1,7 @@
 {
   "selected_model": "XGBoost",
   "selection_metric": "cv_f1_macro_mean",
-  "cv_f1_macro_mean": 0.7359905589178792,
+  "cv_f1_macro_mean": 0.7346093960174643,
   "cv_folds": 5,
   "random_seed": 42,
   "categorical_columns": [
@@ -40,22 +40,32 @@
     "Curricular units 2nd sem (without evaluations)",
     "Unemployment rate",
     "Inflation rate",
-    "GDP"
+    "GDP",
+    "approval_rate_1st",
+    "enrolled_minus_approved_1st",
+    "approval_rate_2nd",
+    "enrolled_minus_approved_2nd",
+    "approved_total",
+    "enrolled_total",
+    "approval_rate_total",
+    "grade_diff_2nd_minus_1st",
+    "grade_avg_1st_2nd",
+    "debt_and_not_up_to_date"
   ],
   "all_model_results": {
     "LogisticRegression": {
       "best_params": {
         "clf__C": 0.1
       },
-      "grid_best_f1_macro": 0.7166625565287451,
-      "cv_f1_macro_mean": 0.7166625565287451,
-      "cv_f1_macro_std": 0.015283543904874271,
+      "grid_best_f1_macro": 0.7205853967782081,
+      "cv_f1_macro_mean": 0.7205853967782081,
+      "cv_f1_macro_std": 0.017678842069958838,
       "cv_f1_macro_scores": [
-        0.7282709743378297,
-        0.7371699614807049,
-        0.7158023645946825,
-        0.7088905475731376,
-        0.6931789346573708
+        0.7332182412431981,
+        0.7402461592747929,
+        0.7258112565065029,
+        0.7137715443803413,
+        0.6898797824862051
       ]
     },
     "RandomForest": {
@@ -64,15 +74,15 @@
         "clf__min_samples_leaf": 1,
         "clf__n_estimators": 500
       },
-      "grid_best_f1_macro": 0.7074465266875027,
-      "cv_f1_macro_mean": 0.7074465266875027,
-      "cv_f1_macro_std": 0.025087594701472937,
+      "grid_best_f1_macro": 0.719334845408081,
+      "cv_f1_macro_mean": 0.719334845408081,
+      "cv_f1_macro_std": 0.01193501923741119,
       "cv_f1_macro_scores": [
-        0.7095179609298987,
-        0.7398273962044133,
-        0.7286131604843594,
-        0.686685674628562,
-        0.6725884411902806
+        0.7273739369670262,
+        0.7159340659340659,
+        0.7376919860654408,
+        0.7036747224714129,
+        0.7119995156024596
       ]
     },
     "XGBoost": {
@@ -83,17 +93,17 @@
         "clf__n_estimators": 500,
         "clf__subsample": 0.8
       },
-      "grid_best_f1_macro": 0.7359905589178792,
-      "cv_f1_macro_mean": 0.7359905589178792,
-      "cv_f1_macro_std": 0.014247668759080621,
+      "grid_best_f1_macro": 0.7346093960174643,
+      "cv_f1_macro_mean": 0.7346093960174643,
+      "cv_f1_macro_std": 0.016505762464956962,
       "cv_f1_macro_scores": [
-        0.7383835505852744,
-        0.7402732828578132,
-        0.7589479078840782,
-        0.7246963172431471,
-        0.717651736019083
+        0.7449208024684335,
+        0.7313560802981268,
+        0.7607982989359376,
+        0.7161485264590151,
+        0.7198232719258089
       ]
     }
   },
-  "generated_at": "2026-04-22 22:53"
+  "generated_at": "2026-04-22 23:34"
 }
