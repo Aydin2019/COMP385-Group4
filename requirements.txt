@@ -5,3 +5,4 @@ matplotlib
 joblib
 shap
 xgboost==2.0.3
+imbalanced-learn==0.12.3
